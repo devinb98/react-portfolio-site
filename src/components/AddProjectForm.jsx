@@ -38,7 +38,15 @@ export default function AddProjectForm({ onAddProject }) {
 
   return (
     <Paper elevation={0} sx={{ p: 3 }}>
-      <Typography variant="h2" component="h2" gutterBottom>
+      <Typography
+        variant="h2"
+        component="h2"
+        gutterBottom
+        sx={{
+          color: 'secondary.main',
+          textShadow: '0 0 14px rgba(0, 229, 255, 0.45)',
+        }}
+      >
         Add Project
       </Typography>
 

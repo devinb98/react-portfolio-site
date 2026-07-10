@@ -8,5 +8,18 @@ body,
 }
 
 body {
-  background-color: #ffffff;
+  /* Miami Vice midnight base with a faint pink/cyan sunset glow at the bottom.
+     MUI's theme paints most surfaces, but this covers the area behind them. */
+  background-color: #0d0221;
+  background-image: radial-gradient(
+      120% 60% at 50% 100%,
+      rgba(255, 46, 136, 0.12) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      100% 50% at 50% 0%,
+      rgba(0, 229, 255, 0.08) 0%,
+      transparent 55%
+    );
+  background-attachment: fixed;
 }

@@ -15,22 +15,23 @@ export default function ProjectCard({ project }) {
       component="article"
       sx={{ py: 1.5 }}
     >
-      {/* Thumbnail placeholder — a bordered square with a neutral image icon */}
+      {/* Thumbnail placeholder — a neon pink→cyan gradient tile with a glow */}
       <Box
         sx={{
           width: 72,
           height: 72,
           flexShrink: 0,
-          border: '1px solid',
-          borderColor: 'divider',
-          borderRadius: 1,
+          borderRadius: 1.5,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          bgcolor: '#f0f0f0',
+          background:
+            'linear-gradient(135deg, rgba(255,46,136,0.25) 0%, rgba(0,229,255,0.25) 100%)',
+          border: '1px solid rgba(0,229,255,0.4)',
+          boxShadow: '0 0 12px rgba(255,46,136,0.25)',
         }}
       >
-        <ImageOutlinedIcon sx={{ color: 'text.secondary' }} />
+        <ImageOutlinedIcon sx={{ color: 'secondary.main' }} />
       </Box>
 
       <Box>
